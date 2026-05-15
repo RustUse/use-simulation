@@ -16,6 +16,7 @@ authors = ["RustUse Contributors"]
 edition = "2024"
 homepage = "https://rustuse.org"
 license = "MIT OR Apache-2.0"
+publish = false
 readme = "README.md"
 repository = "https://github.com/RustUse/use-simulation"
 rust-version = "1.95.0"
@@ -38,10 +39,10 @@ first-publish-candidates = [
     "use-state-step",
     "use-simulation-clock",
     "use-seed",
-    "use-monte-carlo",
-    "use-random-walk",
     "use-event-simulation",
     "use-simulation-result",
+    "use-monte-carlo",
+    "use-random-walk",
     "use-simulation",
 ]
 

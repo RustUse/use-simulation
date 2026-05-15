@@ -76,7 +76,7 @@ pub fn unit_f64_from_seed(seed: usize) -> f64 {
 
 #[cfg(test)]
 mod tests {
-    use super::{mix_value, unit_f64_from_seed, SeedError, SimulationSeed};
+    use super::{SeedError, SimulationSeed, mix_value, unit_f64_from_seed};
 
     #[test]
     fn mixes_repeatably() {

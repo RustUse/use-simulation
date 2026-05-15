@@ -83,7 +83,7 @@ pub fn states(initial_state: f64, deltas: &[f64]) -> Result<Vec<f64>, StateStepE
 
 #[cfg(test)]
 mod tests {
-    use super::{apply_steps, states, step_state, StateStepError};
+    use super::{StateStepError, apply_steps, states, step_state};
 
     #[test]
     fn steps_state_forward() {

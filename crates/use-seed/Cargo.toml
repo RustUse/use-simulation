@@ -9,6 +9,7 @@ homepage.workspace = true
 license.workspace = true
 repository.workspace = true
 rust-version.workspace = true
+readme = "README.md"
 documentation = "https://docs.rs/use-seed"
 keywords = ["seed", "simulation", "deterministic", "random"]
 categories = ["algorithms", "science"]
