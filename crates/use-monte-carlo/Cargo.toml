@@ -1,0 +1,20 @@
+[package]
+name = "use-monte-carlo"
+description = "Primitive Monte Carlo helpers for repeatable simulation runs"
+publish = true
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+documentation = "https://docs.rs/use-monte-carlo"
+keywords = ["simulation", "monte-carlo", "sampling", "estimate"]
+categories = ["algorithms", "mathematics", "science"]
+
+[dependencies]
+use-seed.workspace = true
+
+[lints]
+workspace = true

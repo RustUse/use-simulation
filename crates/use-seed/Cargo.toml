@@ -1,0 +1,17 @@
+[package]
+name = "use-seed"
+description = "Repeatable seed helpers for primitive simulations"
+publish = true
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+documentation = "https://docs.rs/use-seed"
+keywords = ["seed", "simulation", "deterministic", "random"]
+categories = ["algorithms", "science"]
+
+[lints]
+workspace = true

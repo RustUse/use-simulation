@@ -1,0 +1,49 @@
+[workspace]
+members = [
+    "crates/use-simulation",
+    "crates/use-state-step",
+    "crates/use-simulation-clock",
+    "crates/use-seed",
+    "crates/use-monte-carlo",
+    "crates/use-random-walk",
+    "crates/use-event-simulation",
+    "crates/use-simulation-result",
+]
+resolver = "2"
+
+[workspace.package]
+authors = ["RustUse Contributors"]
+edition = "2024"
+homepage = "https://rustuse.org"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/RustUse/use-simulation"
+rust-version = "1.95.0"
+version = "0.0.1"
+
+[workspace.dependencies]
+use-event-simulation = { version = "0.0.1", path = "crates/use-event-simulation" }
+use-monte-carlo = { version = "0.0.1", path = "crates/use-monte-carlo" }
+use-random-walk = { version = "0.0.1", path = "crates/use-random-walk" }
+use-seed = { version = "0.0.1", path = "crates/use-seed" }
+use-simulation = { version = "0.0.1", path = "crates/use-simulation" }
+use-simulation-clock = { version = "0.0.1", path = "crates/use-simulation-clock" }
+use-simulation-result = { version = "0.0.1", path = "crates/use-simulation-result" }
+use-state-step = { version = "0.0.1", path = "crates/use-state-step" }
+
+[workspace.metadata.rustuse.release]
+publish = false
+versioning = "lockstep-0.x"
+first-publish-candidates = [
+    "use-state-step",
+    "use-simulation-clock",
+    "use-seed",
+    "use-monte-carlo",
+    "use-random-walk",
+    "use-event-simulation",
+    "use-simulation-result",
+    "use-simulation",
+]
+
+[workspace.lints.rust]
+unsafe_code = "forbid"

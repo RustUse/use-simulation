@@ -1,0 +1,26 @@
+[package]
+name = "use-simulation"
+description = "Composable facade crate for RustUse simulation primitives"
+publish = true
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+documentation = "https://docs.rs/use-simulation"
+keywords = ["simulation", "monte-carlo", "random-walk", "event", "clock"]
+categories = ["algorithms", "science"]
+
+[dependencies]
+use-event-simulation.workspace = true
+use-monte-carlo.workspace = true
+use-random-walk.workspace = true
+use-seed.workspace = true
+use-simulation-clock.workspace = true
+use-simulation-result.workspace = true
+use-state-step.workspace = true
+
+[lints]
+workspace = true
