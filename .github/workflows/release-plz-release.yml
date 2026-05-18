@@ -1,6 +1,6 @@
 name: Release Publish Automation
 
-on:
+"on":
     push:
         branches:
             - main
@@ -27,8 +27,7 @@ jobs:
         runs-on: ubuntu-latest
         env:
             PUBLISHED_CRATES: >-
-                use-state-step use-simulation-clock use-seed use-monte-carlo
-                use-random-walk use-event-simulation use-simulation-result use-simulation
+              use-state-step use-simulation-clock use-seed use-event-simulation use-simulation-result use-monte-carlo use-random-walk use-simulation
         steps:
             - name: Check out repository
               uses: actions/checkout@v4
